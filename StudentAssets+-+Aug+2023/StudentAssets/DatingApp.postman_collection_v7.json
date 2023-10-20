@@ -15,12 +15,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://localhost:5001/weatherforecast",
+							"raw": "https://localhost:44303/weatherforecast",
 							"protocol": "https",
 							"host": [
 								"localhost"
 							],
-							"port": "5001",
+							"port": "44303",
 							"path": [
 								"weatherforecast"
 							]
@@ -34,15 +34,15 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://localhost:5001/api/users",
+							"raw": "https://localhost:44303/api/Users",
 							"protocol": "https",
 							"host": [
 								"localhost"
 							],
-							"port": "5001",
+							"port": "44303",
 							"path": [
 								"api",
-								"users"
+								"Users"
 							]
 						}
 					},
@@ -54,15 +54,15 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://localhost:5001/api/users/1",
+							"raw": "https://localhost:44303/api/Users/1",
 							"protocol": "https",
 							"host": [
 								"localhost"
 							],
-							"port": "5001",
+							"port": "44303",
 							"path": [
 								"api",
-								"users",
+								"Users",
 								"1"
 							]
 						}
@@ -202,15 +202,15 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://localhost:5001/api/users",
+							"raw": "https://localhost:44303/api/Users",
 							"protocol": "https",
 							"host": [
 								"localhost"
 							],
-							"port": "5001",
+							"port": "44303",
 							"path": [
 								"api",
-								"users"
+								"Users"
 							]
 						}
 					},
@@ -222,15 +222,15 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://localhost:5001/api/users/1",
+							"raw": "https://localhost:44303/api/Users/1",
 							"protocol": "https",
 							"host": [
 								"localhost"
 							],
-							"port": "5001",
+							"port": "44303",
 							"path": [
 								"api",
-								"users",
+								"Users",
 								"1"
 							]
 						}
@@ -249,15 +249,15 @@
 							}
 						],
 						"url": {
-							"raw": "https://localhost:5001/api/users/1",
+							"raw": "https://localhost:44303/api/Users/1",
 							"protocol": "https",
 							"host": [
 								"localhost"
 							],
-							"port": "5001",
+							"port": "44303",
 							"path": [
 								"api",
-								"users",
+								"Users",
 								"1"
 							]
 						}
@@ -442,15 +442,15 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://localhost:5001/api/users",
+							"raw": "https://localhost:44303/api/Users",
 							"protocol": "https",
 							"host": [
 								"localhost"
 							],
-							"port": "5001",
+							"port": "44303",
 							"path": [
 								"api",
-								"users"
+								"Users"
 							]
 						}
 					},
@@ -468,15 +468,15 @@
 							}
 						],
 						"url": {
-							"raw": "https://localhost:5001/api/users/lisa",
+							"raw": "https://localhost:44303/api/Users/lisa",
 							"protocol": "https",
 							"host": [
 								"localhost"
 							],
-							"port": "5001",
+							"port": "44303",
 							"path": [
 								"api",
-								"users",
+								"Users",
 								"lisa"
 							]
 						}
@@ -557,13 +557,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{url}}/api/users",
+							"raw": "{{url}}/api/Users",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
 								"api",
-								"users"
+								"Users"
 							]
 						}
 					},
@@ -644,13 +644,13 @@
 							]
 						},
 						"url": {
-							"raw": "{{url}}/api/users/add-photo",
+							"raw": "{{url}}/api/Users/add-photo",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
 								"api",
-								"users",
+								"Users",
 								"add-photo"
 							]
 						}
@@ -669,13 +669,13 @@
 							}
 						],
 						"url": {
-							"raw": "{{url}}/api/users/lisa",
+							"raw": "{{url}}/api/Users/lisa",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
 								"api",
-								"users",
+								"Users",
 								"lisa"
 							]
 						}
@@ -694,15 +694,15 @@
 							}
 						],
 						"url": {
-							"raw": "https://localhost:5001/api/users/set-main-photo/11",
+							"raw": "https://localhost:44303/api/Users/set-main-photo/11",
 							"protocol": "https",
 							"host": [
 								"localhost"
 							],
-							"port": "5001",
+							"port": "44303",
 							"path": [
 								"api",
-								"users",
+								"Users",
 								"set-main-photo",
 								"11"
 							]
@@ -722,15 +722,15 @@
 							}
 						],
 						"url": {
-							"raw": "https://localhost:5001/api/users/delete-photo/11",
+							"raw": "https://localhost:44303/api/Users/delete-photo/11",
 							"protocol": "https",
 							"host": [
 								"localhost"
 							],
-							"port": "5001",
+							"port": "44303",
 							"path": [
 								"api",
-								"users",
+								"Users",
 								"delete-photo",
 								"11"
 							]
@@ -803,13 +803,13 @@
 							}
 						],
 						"url": {
-							"raw": "{{url}}/api/users/bob",
+							"raw": "{{url}}/api/Users/bob",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
 								"api",
-								"users",
+								"Users",
 								"bob"
 							]
 						}
@@ -881,13 +881,13 @@
 							}
 						],
 						"url": {
-							"raw": "{{url}}/api/users",
+							"raw": "{{url}}/api/Users",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
 								"api",
-								"users"
+								"Users"
 							]
 						}
 					},
@@ -905,13 +905,13 @@
 							}
 						],
 						"url": {
-							"raw": "{{url}}/api/users?pageNumber=1&pageSize=5",
+							"raw": "{{url}}/api/Users?pageNumber=1&pageSize=5",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
 								"api",
-								"users"
+								"Users"
 							],
 							"query": [
 								{
@@ -939,13 +939,13 @@
 							}
 						],
 						"url": {
-							"raw": "{{url}}/api/users?gender=female",
+							"raw": "{{url}}/api/Users?gender=female",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
 								"api",
-								"users"
+								"Users"
 							],
 							"query": [
 								{
@@ -969,13 +969,13 @@
 							}
 						],
 						"url": {
-							"raw": "{{url}}/api/users?minAge=25",
+							"raw": "{{url}}/api/Users?minAge=25",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
 								"api",
-								"users"
+								"Users"
 							],
 							"query": [
 								{
@@ -999,13 +999,13 @@
 							}
 						],
 						"url": {
-							"raw": "{{url}}/api/users?maxAge=40",
+							"raw": "{{url}}/api/Users?maxAge=40",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
 								"api",
-								"users"
+								"Users"
 							],
 							"query": [
 								{
@@ -1029,13 +1029,13 @@
 							}
 						],
 						"url": {
-							"raw": "{{url}}/api/users?minAge=20&maxAge=29",
+							"raw": "{{url}}/api/Users?minAge=20&maxAge=29",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
 								"api",
-								"users"
+								"Users"
 							],
 							"query": [
 								{
@@ -1063,13 +1063,13 @@
 							}
 						],
 						"url": {
-							"raw": "{{url}}/api/users?orderBy=created&gender=female",
+							"raw": "{{url}}/api/Users?orderBy=created&gender=female",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
 								"api",
-								"users"
+								"Users"
 							],
 							"query": [
 								{
@@ -1097,13 +1097,13 @@
 							}
 						],
 						"url": {
-							"raw": "{{url}}/api/users?orderBy=lastActive&gender=female",
+							"raw": "{{url}}/api/Users?orderBy=lastActive&gender=female",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
 								"api",
-								"users"
+								"Users"
 							],
 							"query": [
 								{
@@ -1666,12 +1666,12 @@
 							}
 						},
 						"url": {
-							"raw": "https://localhost:5001/api/account/register",
+							"raw": "https://localhost:44303/api/account/register",
 							"protocol": "https",
 							"host": [
 								"localhost"
 							],
-							"port": "5001",
+							"port": "44303",
 							"path": [
 								"api",
 								"account",
@@ -1741,13 +1741,13 @@
 							}
 						],
 						"url": {
-							"raw": "{{url}}/api/users",
+							"raw": "{{url}}/api/Users",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
 								"api",
-								"users"
+								"Users"
 							]
 						}
 					},
@@ -1765,13 +1765,13 @@
 							}
 						],
 						"url": {
-							"raw": "{{url}}/api/users",
+							"raw": "{{url}}/api/Users",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
 								"api",
-								"users"
+								"Users"
 							]
 						}
 					},
@@ -1789,13 +1789,13 @@
 							}
 						],
 						"url": {
-							"raw": "{{url}}/api/users/lisa",
+							"raw": "{{url}}/api/Users/lisa",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
 								"api",
-								"users",
+								"Users",
 								"lisa"
 							]
 						}
@@ -1814,13 +1814,13 @@
 							}
 						],
 						"url": {
-							"raw": "{{url}}/api/users/lisa",
+							"raw": "{{url}}/api/Users/lisa",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
 								"api",
-								"users",
+								"Users",
 								"lisa"
 							]
 						}
@@ -1839,14 +1839,14 @@
 							}
 						],
 						"url": {
-							"raw": "{{url}}/api/admin/users-with-roles",
+							"raw": "{{url}}/api/admin/Users-with-roles",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
 								"api",
 								"admin",
-								"users-with-roles"
+								"Users-with-roles"
 							]
 						}
 					},
@@ -1864,14 +1864,14 @@
 							}
 						],
 						"url": {
-							"raw": "{{url}}/api/admin/users-with-roles",
+							"raw": "{{url}}/api/admin/Users-with-roles",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
 								"api",
 								"admin",
-								"users-with-roles"
+								"Users-with-roles"
 							]
 						}
 					},
@@ -2130,13 +2130,13 @@
 							]
 						},
 						"url": {
-							"raw": "{{url}}/api/users/add-photo",
+							"raw": "{{url}}/api/Users/add-photo",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
 								"api",
-								"users",
+								"Users",
 								"add-photo"
 							]
 						}
@@ -2180,13 +2180,13 @@
 							}
 						],
 						"url": {
-							"raw": "{{url}}/api/users/lisa",
+							"raw": "{{url}}/api/Users/lisa",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
 								"api",
-								"users",
+								"Users",
 								"lisa"
 							]
 						}
@@ -2205,13 +2205,13 @@
 							}
 						],
 						"url": {
-							"raw": "{{url}}/api/users/lisa",
+							"raw": "{{url}}/api/Users/lisa",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
 								"api",
-								"users",
+								"Users",
 								"lisa"
 							]
 						}
@@ -2340,13 +2340,13 @@
 							]
 						},
 						"url": {
-							"raw": "{{url}}/api/users/add-photo",
+							"raw": "{{url}}/api/Users/add-photo",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
 								"api",
-								"users",
+								"Users",
 								"add-photo"
 							]
 						}
@@ -2391,13 +2391,13 @@
 							}
 						],
 						"url": {
-							"raw": "{{url}}/api/users/bob",
+							"raw": "{{url}}/api/Users/bob",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
 								"api",
-								"users",
+								"Users",
 								"bob"
 							]
 						}
@@ -2430,7 +2430,7 @@
 	"variable": [
 		{
 			"key": "url",
-			"value": "https://localhost:5001"
+			"value": "https://localhost:44303"
 		}
 	]
 }
