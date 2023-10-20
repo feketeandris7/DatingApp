@@ -23,10 +23,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-using (var context = new DataContext())
-{
-    context.Database.EnsureCreated();
-}
 
 app.UseHttpsRedirection();
 
