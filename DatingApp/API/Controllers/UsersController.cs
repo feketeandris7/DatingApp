@@ -24,7 +24,6 @@ namespace API.Controllers
 
             return users;
         }
-
         [HttpGet("id")]// /api/users/2
         public async Task<ActionResult<AppUser>> GetUser(int id)
         {
