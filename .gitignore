@@ -1,6 +1,9 @@
 # Random extension files that popped up in my github desktop
 *.vsixmanifest
 *.vsidx
+*.dll
+*.pdb
+*.db
 *.props
 *.target
 
@@ -20,6 +23,7 @@ ipch/
 *.opensdf
 *.sdf
 *.cachefile
+*.cache
 
 # Folder config file
 Desktop.ini
