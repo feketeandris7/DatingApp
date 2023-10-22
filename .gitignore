@@ -2,6 +2,7 @@
 *.vsixmanifest
 *.vsidx
 *.dll
+API.dll
 *.pdb
 *.db
 *.props
