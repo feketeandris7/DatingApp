@@ -1,3 +1,34 @@
+# Random extension files that popped up in my github desktop
+*.vsixmanifest
+*.vsidx
+*.dll
+API.dll
+*.pdb
+*.db
+*.props
+*.target
+
+# Recycle used on shares
+$RECYCLE.BIN/
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+datingapp.db
+API.pdb
+
+# Visual C++ cache files
+ipch/
+*.aps
+*.ncb
+*.opensdf
+*.sdf
+*.cachefile
+*.cache
+
+# Folder config file
+Desktop.ini
+
 # Logs
 logs
 *.log
