@@ -352,3 +352,10 @@ baseline.json
 # Husky
 .husky/_
 aio/content/examples/.DS_Store
+
+# *.db
+*.db-shm
+*.db-wal
+# API/*.db
+API/*.db-shm
+API/*.db-wal
