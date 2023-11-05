@@ -1,10 +1,3 @@
-using API.Data;
-using API.Interfaces;
-using API.Services;
-using Microsoft.IdentityModel.Tokens;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.EntityFrameworkCore;
-using System.Text;
 using API.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -21,6 +14,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(); 
 
 var app = builder.Build();
+
 
 // Configure the HTTP request pipeline.
 app.UseCors(builder => builder.AllowAnyHeader().AllowAnyMethod()
