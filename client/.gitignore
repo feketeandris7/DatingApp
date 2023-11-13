@@ -15,6 +15,7 @@ ehthumbs.db
 datingapp.db
 API.pdb
 # Visual C++ cache files
+.angular/cache
 ipch/
 *.aps
 *.ncb
