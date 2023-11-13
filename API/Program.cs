@@ -1,5 +1,6 @@
 using API.Data;
 using API.Extensions;
+using API.Middleware;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -17,6 +18,7 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
+app.UseMiddleware<ExceptionMiddleware>();
 
 // Configure the HTTP request pipeline.
 app.UseCors(builder => builder.AllowAnyHeader().AllowAnyMethod()
@@ -30,11 +32,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
-
-app.UseHttpsRedirection();
-
-app.UseAuthorization();
 
 app.MapControllers();
 
