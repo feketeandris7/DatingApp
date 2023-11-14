@@ -1,6 +1,7 @@
-﻿using API.Entities;
+﻿using API.DTOs;
+using API.Entities;
 using API.Interfaces;
-using System.Data.Entity;
+using Microsoft.EntityFrameworkCore;
 
 namespace API.Data
 {
@@ -12,29 +13,51 @@ namespace API.Data
             _context = context;
         }
 
+        public async Task<MemberDto> GetMemberAsync(string username)
+        {
+            return await _context.Users
+                .Where(x => x.Username == username)
+                .Select(user => new MemberDto
+                {
+                    Id = user.Id,
+                    Username = user.Username,
+                    KnownAs = user.KnownAs,
+
+                }).SingleOrDefaultAsync();
+        }
+
+        public Task<IEnumerable<MemberDto>> GetMembersAsync()
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task<AppUser> GetUserByIdAsync(int id)
         {
             return await _context.Users.FindAsync(id);
         }
 
-        public async Task<AppUser> GetUserByNameAsync(string name)
+        public async Task<AppUser> GetUserByNameAsync(string username)
         {
-            return await _context.Users.FirstOrDefaultAsync();
+            return await _context.Users
+                .Include(p => p.Photos)
+                .FirstOrDefaultAsync(x => x.Username == username);
         }
 
-        public Task<IEnumerable<AppUser>> GetUsersAsync()
+        public async Task<IEnumerable<AppUser>> GetUsersAsync()
         {
-            throw new NotImplementedException();
+            return await _context.Users
+                .Include(p => p.Photos)
+                .ToListAsync();
         }
 
-        public Task<bool> SaveAllAsync()
+        public async Task<bool> SaveAllAsync()
         {
-            throw new NotImplementedException();
+            return await _context.SaveChangesAsync() > 0;
         }
 
         public void Update(AppUser user)
         {
-            throw new NotImplementedException();
+            _context.Entry(user).State = EntityState.Modified;
         }
     }
 }
