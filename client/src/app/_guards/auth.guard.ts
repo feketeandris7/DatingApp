@@ -1,8 +1,8 @@
-import { CanActivateFn } from '@angular/router';
-import { AccountService } from '../_services/account.service';
-import { inject } from '@angular/core';
-import { ToastrService } from 'ngx-toastr';
-import { map } from 'rxjs';
+import { CanActivateFn } from "@angular/router";
+import { AccountService } from "../_services/account.service";
+import { inject } from "@angular/core";
+import { ToastrService } from "ngx-toastr";
+import { map } from "rxjs";
 
 export const AuthGuard: CanActivateFn = (route, state) => {
   const accountService = inject(AccountService);
@@ -13,7 +13,7 @@ export const AuthGuard: CanActivateFn = (route, state) => {
       if (user) {
         return true;
       } else {
-        toastr.error('You shall not pass!');
+        toastr.error("You shall not pass!");
         return false;
       }
     })

@@ -8,6 +8,7 @@
   "overrides": [
     {
       "files": [
+        "**/*.ts",
         "**/*.css",
         "**/*.scss",
         "**/*.html"
