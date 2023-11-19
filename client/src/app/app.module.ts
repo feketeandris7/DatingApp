@@ -7,11 +7,10 @@ import { AppComponent } from "./app.component";
 import { HTTP_INTERCEPTORS, HttpClientModule } from "@angular/common/http";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { NavComponent } from "./nav/nav.component";
-import { FormsModule } from "@angular/forms";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { HomeComponent } from "./home/home.component";
 import { RegisterComponent } from "./register/register.component";
 import { MemberListComponent } from "./members/member-list/member-list.component";
-import { MemberDetailComponent } from "./members/member-detail/member-detail.component";
 import { ListsComponent } from "./lists/lists.component";
 import { MessagesComponent } from "./messages/messages.component";
 import { SharedModule } from "./_modules/shared.module";
@@ -21,6 +20,8 @@ import { ErrorInterceptor } from "./_interceptors/error.interceptor";
 import { MemberEditComponent } from "./members/member-edit/member-edit.component";
 import { LoadingInterceptor } from "./_interceptors/loading.interceptor";
 import { PhotoEditComponent } from "./members/photo-edit/photo-edit.component";
+import { TextInputComponent } from './_forms/text-input/text-input.component';
+import { DatePickerComponent } from './_forms/date-picker/date-picker.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,9 @@ import { PhotoEditComponent } from "./members/photo-edit/photo-edit.component";
     MessagesComponent,
     MemberCardComponent,
     MemberEditComponent,
-    PhotoEditComponent
+    PhotoEditComponent,
+    TextInputComponent,
+    DatePickerComponent
   ],
   imports: [
     BrowserModule,
@@ -41,6 +44,7 @@ import { PhotoEditComponent } from "./members/photo-edit/photo-edit.component";
     HttpClientModule,
     BrowserAnimationsModule,
     FormsModule,
+    ReactiveFormsModule,
     SharedModule
   ],
   providers: [
